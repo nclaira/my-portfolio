@@ -14,25 +14,25 @@ export default function Navigation() {
   ]
 
   return (
-    <nav className="fixed top-0 w-full bg-background/95 backdrop-blur-sm border-b border-border z-50">
+    <nav className="fixed top-0 w-full bg-[#0f172a]/95 backdrop-blur-sm border-b border-[#334155] z-50">
       <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-        <Link href="/" className="text-2xl font-bold text-primary">
+        <Link href="/" className="text-2xl font-bold text-[#f59e0b]">
           Claire
         </Link>
 
         {/* Mobile menu button */}
         <button onClick={() => setIsOpen(!isOpen)} className="md:hidden flex flex-col gap-1.5" aria-label="Toggle menu">
-          <span className={`h-0.5 w-6 bg-foreground transition-all ${isOpen ? "rotate-45 translate-y-2" : ""}`}></span>
-          <span className={`h-0.5 w-6 bg-foreground transition-all ${isOpen ? "opacity-0" : ""}`}></span>
+          <span className={`h-0.5 w-6 bg-[#f8fafc] transition-all ${isOpen ? "rotate-45 translate-y-2" : ""}`}></span>
+          <span className={`h-0.5 w-6 bg-[#f8fafc] transition-all ${isOpen ? "opacity-0" : ""}`}></span>
           <span
-            className={`h-0.5 w-6 bg-foreground transition-all ${isOpen ? "-rotate-45 -translate-y-2" : ""}`}
+            className={`h-0.5 w-6 bg-[#f8fafc] transition-all ${isOpen ? "-rotate-45 -translate-y-2" : ""}`}
           ></span>
         </button>
 
         {/* Desktop menu */}
         <div className="hidden md:flex gap-8">
           {links.map((link) => (
-            <Link key={link.href} href={link.href} className="text-foreground/80 hover:text-primary transition-colors">
+            <Link key={link.href} href={link.href} className="text-[#f8fafc]/80 hover:text-[#f59e0b] transition-colors">
               {link.label}
             </Link>
           ))}
@@ -40,13 +40,13 @@ export default function Navigation() {
 
         {/* Mobile menu */}
         {isOpen && (
-          <div className="absolute top-full left-0 right-0 bg-background border-b border-border md:hidden">
+          <div className="absolute top-full left-0 right-0 bg-[#0f172a] border-b border-[#334155] md:hidden">
             <div className="flex flex-col gap-4 px-6 py-4">
               {links.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="text-foreground/80 hover:text-primary transition-colors"
+                  className="text-[#f8fafc]/80 hover:text-[#f59e0b] transition-colors"
                   onClick={() => setIsOpen(false)}
                 >
                   {link.label}

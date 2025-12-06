@@ -3,6 +3,7 @@ import Link from "next/link"
 
 export default function Hero() {
   return (
+    <div className="w-full bg-cover bg-center bg-[url('hero-background.jpg">
     <section className="pt-32 pb-20 px-6 relative overflow-hidden">
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-10">
@@ -19,13 +20,13 @@ export default function Hero() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <div>
-              <p className="text-primary text-sm font-semibold tracking-wide uppercase mb-2">Welcome</p>
+              <p className="text-[#f59e0b] text-sm font-semibold tracking-wide uppercase mb-2">Welcome</p>
               <h1 className="text-5xl md:text-6xl font-bold leading-tight">
-                Hello, I'm <span className="text-primary">Claire</span>
+                Hello, I'm <span className="text-[#f59e0b]">Claire</span>
               </h1>
             </div>
 
-            <p className="text-lg text-foreground/80 leading-relaxed max-w-lg">
+            <p className="text-lg text-[#f8fafc]/80 leading-relaxed max-w-lg">
               I'm a passionate front-end developer specializing in creating clean, responsive web interfaces. Currently
               pursuing my Applied Mathematics degree while building modern web solutions with Next.js and React.
             </p>
@@ -33,13 +34,13 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Link
                 href="#projects"
-                className="inline-block bg-primary text-primary-foreground font-semibold px-8 py-3 rounded-lg hover:opacity-90 transition-opacity"
+                className="inline-block bg-[#f59e0b] text-[#0f172a] font-semibold px-8 py-3 rounded-lg hover:opacity-90 transition-opacity"
               >
                 View My Work
               </Link>
               <Link
                 href="#contact"
-                className="inline-block border border-primary text-primary font-semibold px-8 py-3 rounded-lg hover:bg-primary/10 transition-colors"
+                className="inline-block border border-[#f59e0b] text-[#f59e0b] font-semibold px-8 py-3 rounded-lg hover:bg-[#f59e0b]/10 transition-colors"
               >
                 Get In Touch
               </Link>
@@ -49,16 +50,18 @@ export default function Hero() {
           <div className="flex justify-center">
             <div className="relative w-72 h-72 md:w-96 md:h-96">
               {/* Glowing circle background */}
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-accent/20 rounded-full blur-3xl"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-[#f59e0b]/30 to-[#fbbf24]/20 rounded-full blur-3xl"></div>
 
-              {/* Image container */}
-              <div className="absolute inset-0 rounded-full overflow-hidden border-2 border-primary/50">
-                <Image src="/images/image.png" alt="Claire Niyigena" fill className="object-cover" priority />
+              {/* Image container */}  
+
+              <div className="absolute inset-0 rounded-full overflow-hidden border-2 border-[#f59e0b]/50">
+                <Image src="/images/me.jpg" alt="Claire Niyigena" fill className="object-cover" priority />
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    </div>
   )
 }
