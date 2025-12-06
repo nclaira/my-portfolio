@@ -16,17 +16,17 @@ export default function Hero() {
         ></div>
       </div>
 
-      <div className="max-w-6xl mx-auto relative z-10">
+      <div className="max-w-7xl mx-auto relative z-10 py-12">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <div>
-              <p className="text-[#f59e0b] text-sm font-semibold tracking-wide uppercase mb-2">Welcome</p>
+              <p className="text-[#f59e0b] text-lg font-semibold tracking-wide uppercase mb-2">Welcome</p>
               <h1 className="text-5xl md:text-6xl font-bold leading-tight">
                 Hello, I'm <span className="text-[#f59e0b]">Claire</span>
               </h1>
             </div>
 
-            <p className="text-lg text-[#f8fafc]/80 leading-relaxed max-w-lg">
+            <p className="text-2xl text-[#f8fafc]/80 leading-relaxed max-w-2xl">
               I'm a passionate front-end developer specializing in creating clean, responsive web interfaces. Currently
               pursuing my Applied Mathematics degree while building modern web solutions with Next.js and React.
             </p>
@@ -34,13 +34,13 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Link
                 href="#projects"
-                className="inline-block bg-[#f59e0b] text-[#0f172a] font-semibold px-8 py-3 rounded-lg hover:opacity-90 transition-opacity"
+                className="text-xl inline-block bg-[#f59e0b] text-[#0f172a] font-bold px-10 py-4 rounded-xl hover:opacity-90 transition-opacity"
               >
                 View My Work
               </Link>
               <Link
                 href="#contact"
-                className="inline-block border border-[#f59e0b] text-[#f59e0b] font-semibold px-8 py-3 rounded-lg hover:bg-[#f59e0b]/10 transition-colors"
+                className="text-xl inline-block border border-[#f59e0b] text-[#f59e0b] font-bold px-10 py-4 rounded-xl hover:bg-[#f59e0b]/10 transition-colors"
               >
                 Get In Touch
               </Link>
@@ -54,7 +54,7 @@ export default function Hero() {
 
               {/* Image container */}  
 
-              <div className="absolute inset-0 rounded-full overflow-hidden border-2 border-[#f59e0b]/50">
+              <div className="absolute inset-0 rounded-full overflow-hidden border-2 border-[#f59e0b]/50  mt-10 shadow-[0_0_95px_white] md:mt-0">
                 <Image src="/images/me.jpg" alt="Claire Niyigena" fill className="object-cover" priority />
               </div>
             </div>

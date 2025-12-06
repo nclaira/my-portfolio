@@ -27,22 +27,22 @@ export default function Projects() {
   ]
 
   return (
-    <section id="projects" className="py-20 px-6 bg-card/20">
-      <div className="max-w-6xl mx-auto">
+    <section id="projects" className="py-20 px-6 bg-[#1e293b]/20">
+      <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">
-            My <span className="text-primary">Projects</span>
+          <h2 className="text-5xl font-bold mb-4">
+            My <span className="text-[#f59e0b]">Projects</span>
           </h2>
-          <p className="text-foreground/60 max-w-2xl mx-auto">Showcasing my latest work and technical expertise</p>
+          <p className="text-xl text-[#f8fafc]/60 max-w-2xl mx-auto">Showcasing my latest work and technical expertise</p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="group bg-background border border-border rounded-lg overflow-hidden hover:border-primary/50 transition-colors"
+              className="group bg-[#0f172a] border border-[#334155] rounded-lg overflow-hidden hover:border-[#f59e0b]/50 transition-colors"
             >
-              <div className="relative h-48 overflow-hidden bg-background/50">
+              <div className="relative h-48 overflow-hidden bg-[#0f172a]/50">
                 <Image
                   src={project.image || "/placeholder.svg"}
                   alt={project.title}
@@ -52,11 +52,11 @@ export default function Projects() {
               </div>
 
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-3">{project.title}</h3>
-                <p className="text-foreground/70 mb-6 text-sm leading-relaxed">{project.description}</p>
+                <h3 className="text-2xl font-bold mb-3">{project.title}</h3>
+                <p className="text-xl text-[#f8fafc]/70 mb-6 text-sm leading-relaxed">{project.description}</p>
                 <Link
                   href={project.link}
-                  className="inline-block text-primary font-semibold hover:opacity-70 transition-opacity flex items-center gap-2"
+                  className="text-xl inline-block text-[#f59e0b] font-semibold hover:opacity-70 transition-opacity flex items-center gap-2"
                 >
                   Explore
                   <span>→</span>

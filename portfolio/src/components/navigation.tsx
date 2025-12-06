@@ -14,9 +14,9 @@ export default function Navigation() {
   ]
 
   return (
-    <nav className="fixed top-0 w-full bg-[#0f172a]/95 backdrop-blur-sm border-b border-[#334155] z-50">
-      <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-        <Link href="/" className="text-2xl font-bold text-[#f59e0b]">
+    <nav className="fixed top-0 w-full bg-[#0f172a]/95 backdrop-blur-sm border-b border-[#334155] z-50 text-2xl">
+      <div className="max-w-8xl mx-auto px-[5cm] py-5 flex justify-between items-center">
+        <Link href="/" className="text-3xl font-bold text-[#f59e0b]">
           Claire
         </Link>
 
@@ -30,6 +30,7 @@ export default function Navigation() {
         </button>
 
         {/* Desktop menu */}
+
         <div className="hidden md:flex gap-8">
           {links.map((link) => (
             <Link key={link.href} href={link.href} className="text-[#f8fafc]/80 hover:text-[#f59e0b] transition-colors">

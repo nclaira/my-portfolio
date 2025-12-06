@@ -10,36 +10,36 @@ export default function Footer() {
   ]
 
   return (
-    <footer className="border-t border-border py-12 px-6 bg-card/30">
+    <footer className="border-t border-[#334155] py-12 px-6 bg-[#1e293b]/30">
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
-            <Link href="/" className="text-2xl font-bold text-primary">
+            <Link href="/" className="text-3xl font-bold text-[#f59e0b]">
               Claire
             </Link>
-            <p className="text-foreground/60 mt-2 text-sm">Front-End Developer & Web Designer</p>
+            <p className="text-[#f8fafc]/60 mt-2 text-xl">Front-End Developer & Web Designer</p>
           </div>
 
           <div>
-            <h3 className="font-semibold mb-4">Quick Links</h3>
-            <ul className="space-y-2 text-foreground/70 text-sm">
+            <h3 className="text-2xl font-semibold mb-4">Quick Links</h3>
+            <ul className="space-y-2 text-[#f8fafc]/70 text-xl">
               <li>
-                <Link href="#about" className="hover:text-primary transition-colors">
+                <Link href="#about" className="hover:text-[#f59e0b] transition-colors">
                   About
                 </Link>
               </li>
               <li>
-                <Link href="#skills" className="hover:text-primary transition-colors">
+                <Link href="#skills" className="hover:text-[#f59e0b] transition-colors">
                   Skills
                 </Link>
               </li>
               <li>
-                <Link href="#projects" className="hover:text-primary transition-colors">
+                <Link href="#projects" className="hover:text-[#f59e0b] transition-colors">
                   Projects
                 </Link>
               </li>
               <li>
-                <Link href="#contact" className="hover:text-primary transition-colors">
+                <Link href="#contact" className="hover:text-[#f59e0b] transition-colors">
                   Contact
                 </Link>
               </li>
@@ -47,14 +47,14 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="font-semibold mb-4">Connect</h3>
+            <h3 className="text-xl font-semibold mb-4">Connect</h3>
             <div className="flex gap-4">
               {socialLinks.map((link) => (
                 <Link
                   key={link.name}
                   href={link.href}
                   aria-label={link.name}
-                  className="text-foreground/60 hover:text-primary transition-colors text-xl"
+                  className="text-3xl text-[#f8fafc]/60 hover:text-[#f59e0b] transition-colors"
                   title={link.name}
                 >
                   {link.icon}
@@ -64,7 +64,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-border pt-8 text-center text-foreground/60 text-sm">
+        <div className="border-t border-[#334155] pt-8 text-center text-[#f8fafc]/60 text-xl">
           <p>&copy; {currentYear} Claire Niyigena. All rights reserved.</p>
         </div>
       </div>
