@@ -31,7 +31,7 @@ export default function About() {
             <div className="bg-[#0f172a]/50 border border-[#334155] rounded-lg p-6">
               <h3 className="text-2xl font-bold text-[#f59e0b] mb-4">Education</h3>
               <p className="text-xl font-semibold mb-1">Applied Mathematics (Level 3)</p>
-              <p className="text-[#f8fafc]/60 text-xl">University of London</p>
+              <p className="text-[#f8fafc]/60 text-xl">University of Rwanda</p>
             </div>
 
             <div className="bg-[#0f172a]/50 border border-[#334155] rounded-lg p-6">
