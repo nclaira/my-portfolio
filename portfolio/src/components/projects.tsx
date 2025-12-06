@@ -4,25 +4,25 @@ import Link from "next/link"
 export default function Projects() {
   const projects = [
     {
-      title: "Portfolio Website",
+      title: "Developer Dashboard",
       description:
-        "A modern, responsive portfolio showcasing web development projects and technical skills. Built with Next.js and Tailwind CSS for optimal performance.",
-      image: "/images/image.png",
-      link: "#",
+        "A modern, responsive Developer Dashboard built with React that displays real-time data from GitHub and weather APIs. Features a beautiful Light/Dark mode toggle for enhanced user experience.",
+      image: "/images/developer-dashboard.png",
+      link: "https://developer-dashboard-qwu8.vercel.app/",
     },
     {
-      title: "Web Application",
+      title: "Medium Clone",
       description:
-        "A full-stack web application demonstrating modern development practices. Features responsive design, clean UI, and seamless user experience.",
-      image: "/web-application-dashboard.png",
-      link: "#",
+        "A full-stack web application inspired by Medium, built with Next.js, React, TypeScript, and MongoDB. This platform allows users to create accounts, publish articles, interact with content, and discover stories through tags and search.",
+      image: "/images/medium-clone.png",
+      link: "https://phase-two-capstone-project-fg2d.vercel.app/",
     },
     {
-      title: "Design System",
+      title: "Movie Explorer",
       description:
-        "Comprehensive design system with reusable components and consistent styling. Built to streamline development and maintain brand consistency.",
-      image: "/design-system-components.png",
-      link: "#",
+        "A modern React-based movie explorer application built with Vite, React Router, and Tailwind CSS. This app allows users to browse movies, search by title, filter by genre, view detailed information, and manage their favorite movies.",
+      image: "/images/movie-explorer.png",
+      link: "https://movie-explorer-web-yzgh.vercel.app/",
     },
   ]
 
@@ -48,6 +48,7 @@ export default function Projects() {
                   alt={project.title}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  unoptimized
                 />
               </div>
 
