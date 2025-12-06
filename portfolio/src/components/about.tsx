@@ -1,14 +1,14 @@
 export default function About() {
   return (
-    <section id="about" className="py-20 px-6 bg-card/30">
+    <section id="about" className="py-20 px-6 bg-[#1e293b]/30">
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div>
             <h2 className="text-4xl font-bold mb-8">
-              <span className="text-primary">About</span> Me
+              <span className="text-[#f59e0b]">About</span> Me
             </h2>
 
-            <div className="space-y-6 text-foreground/80 leading-relaxed">
+            <div className="space-y-6 text-[#f8fafc]/80 leading-relaxed">
               <p>
                 I am Claire Niyigena, a Level 3 Applied Mathematics student at the University of London, with a strong
                 passion for coding and modern software development.
@@ -28,23 +28,23 @@ export default function About() {
           </div>
 
           <div className="space-y-8">
-            <div className="bg-background/50 border border-border rounded-lg p-6">
-              <h3 className="text-xl font-bold text-primary mb-4">Education</h3>
+            <div className="bg-[#0f172a]/50 border border-[#334155] rounded-lg p-6">
+              <h3 className="text-xl font-bold text-[#f59e0b] mb-4">Education</h3>
               <p className="font-semibold mb-1">Applied Mathematics (Level 3)</p>
-              <p className="text-foreground/60 text-sm">University of London</p>
+              <p className="text-[#f8fafc]/60 text-sm">University of London</p>
             </div>
 
-            <div className="bg-background/50 border border-border rounded-lg p-6">
-              <h3 className="text-xl font-bold text-primary mb-4">Passion</h3>
-              <p className="text-foreground/80">
+            <div className="bg-[#0f172a]/50 border border-[#334155] rounded-lg p-6">
+              <h3 className="text-xl font-bold text-[#f59e0b] mb-4">Passion</h3>
+              <p className="text-[#f8fafc]/80">
                 Creating user-friendly interfaces and seamless experiences that make a difference. I love the
                 intersection of design and development.
               </p>
             </div>
 
-            <div className="bg-background/50 border border-border rounded-lg p-6">
-              <h3 className="text-xl font-bold text-primary mb-4">Commitment</h3>
-              <p className="text-foreground/80">
+            <div className="bg-[#0f172a]/50 border border-[#334155] rounded-lg p-6">
+              <h3 className="text-xl font-bold text-[#f59e0b] mb-4">Commitment</h3>
+              <p className="text-[#f8fafc]/80">
                 Continuous learning and growth in the ever-evolving tech landscape. Always exploring new technologies
                 and best practices.
               </p>
