@@ -15,7 +15,7 @@ export default function Navigation() {
 
   return (
     <nav className="fixed top-0 w-full bg-[#0f172a]/95 backdrop-blur-sm border-b border-[#334155] z-50 text-2xl">
-      <div className="max-w-8xl mx-auto px-[5cm] py-5 flex justify-between items-center">
+      <div className="max-w-9xl mx-auto px-[5cm] py-5 flex justify-between items-center">
         <Link href="/" className="text-3xl font-bold text-[#f59e0b]">
           Claire
         </Link>
