@@ -12,6 +12,11 @@ export const metadata: Metadata = {
   description:
     "Professional portfolio of Claire Niyigena, a front-end developer specializing in modern web development with Next.js, React, and Tailwind CSS.",
   generator: "v0.app",
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 5,
+  },
   icons: {
     icon: [
       {
