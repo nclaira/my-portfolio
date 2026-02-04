@@ -55,7 +55,7 @@ export default function Hero() {
               {/* Image container */}  
 
               <div className="absolute inset-0 rounded-full overflow-hidden border-2 border-[#f59e0b]/50  mt-10 shadow-[0_0_95px_white] md:mt-0">
-                <Image src="/images/me.jpg" alt="Claire Niyigena" fill className="object-cover" priority />
+                <Image src="/images/me.jpeg" alt="Claire Niyigena" fill className="object-cover" priority />
               </div>
             </div>
           </div>
