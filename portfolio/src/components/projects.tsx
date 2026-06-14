@@ -4,6 +4,12 @@ import Link from "next/link"
 export default function Projects() {
   const projects = [
     {
+      title: "Umurunga Family – NGO Website",
+      description: "Modern frontend website for a Rwanda-based peace and youth empowerment organization. Built with Next.js 16, Tailwind CSS, and TypeScript. Features member application system via Google Forms integration, dynamic event management, responsive team grid, and PDF resource viewer. Deployed on Vercel.",
+      image: "/images/umurunga-website.png",
+      link: "https://umurunga-website.vercel.app/",
+    },
+    {
       title: "Developer Dashboard",
       description:
         "A modern, responsive Developer Dashboard built with React that displays real-time data from GitHub and weather APIs. Features a beautiful Light/Dark mode toggle for enhanced user experience.",
