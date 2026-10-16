@@ -1,32 +1,30 @@
 import Image from "next/image"
 import Link from "next/link"
+import AnimateIn from "@/components/AnimateIn"
 
 export default function Projects() {
   const projects = [
     {
       title: "Umurunga Family – NGO Website",
-      description: "Modern frontend website for a Rwanda-based peace and youth empowerment organization. Built with Next.js 16, Tailwind CSS, and TypeScript. Features member application system via Google Forms integration, dynamic event management, responsive team grid, and PDF resource viewer. Deployed on Vercel.",
+      description: "Modern frontend website for a Rwanda-based peace and youth empowerment organization. Built with Next.js 16, Tailwind CSS, and TypeScript.",
       image: "/images/umurunga-website.png",
       link: "https://umurunga-website.vercel.app/",
     },
     {
       title: "Developer Dashboard",
-      description:
-        "A modern, responsive Developer Dashboard built with React that displays real-time data from GitHub and weather APIs. Features a beautiful Light/Dark mode toggle for enhanced user experience.",
+      description: "A responsive Developer Dashboard built with React displaying real-time data from GitHub and weather APIs. Features Light/Dark mode toggle.",
       image: "/images/developer-dashboard.png",
       link: "https://developer-dashboard-qwu8.vercel.app/",
     },
     {
       title: "Medium Clone",
-      description:
-        "A full-stack web application inspired by Medium, built with Next.js, React, TypeScript, and MongoDB. This platform allows users to create accounts, publish articles, interact with content, and discover stories through tags and search.",
+      description: "A full-stack web application inspired by Medium, built with Next.js, React, TypeScript, and MongoDB. Users can publish articles and discover stories.",
       image: "/images/medium-clone.png",
       link: "https://phase-two-capstone-project-fg2d.vercel.app/",
     },
     {
       title: "Movie Explorer",
-      description:
-        "A modern React-based movie explorer application built with Vite, React Router, and Tailwind CSS. This app allows users to browse movies, search by title, filter by genre, view detailed information, and manage their favorite movies.",
+      description: "A React-based movie explorer built with Vite, React Router, and Tailwind CSS. Browse movies, search by title, filter by genre, and manage favorites.",
       image: "/images/movie-explorer.png",
       link: "https://movie-explorer-web-yzgh.vercel.app/",
     },
@@ -34,42 +32,31 @@ export default function Projects() {
 
   return (
     <section id="projects" className="py-20 px-6 bg-[#1e293b]/20">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-5xl font-bold mb-4">
-            My <span className="text-[#f59e0b]">Projects</span>
-          </h2>
-          <p className="text-xl text-[#f8fafc]/60 max-w-2xl mx-auto">Showcasing my latest work and technical expertise</p>
-        </div>
+      <div className="max-w-6xl mx-auto">
+        <AnimateIn>
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-3">My <span className="text-[#f59e0b]">Projects</span></h2>
+            <p className="text-sm text-[#f8fafc]/60 max-w-xl mx-auto">Showcasing my latest work and technical expertise</p>
+          </div>
+        </AnimateIn>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-6">
           {projects.map((project, index) => (
-            <div
-              key={index}
-              className="group bg-[#0f172a] border border-[#334155] rounded-lg overflow-hidden hover:border-[#f59e0b]/50 transition-colors"
-            >
-              <div className="relative h-48 overflow-hidden bg-[#0f172a]/50">
-                <Image
-                  src={project.image || "/placeholder.svg"}
-                  alt={project.title}
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
-                  unoptimized
-                />
+            <AnimateIn key={index} delay={index * 0.1}>
+              <div className="group bg-[#0f172a] border border-[#334155] rounded-xl overflow-hidden hover:border-[#f59e0b]/50 hover:shadow-lg hover:shadow-[#f59e0b]/5 transition-all duration-300 h-full flex flex-col">
+                <div className="relative h-48 overflow-hidden">
+                  <Image src={project.image || "/placeholder.svg"} alt={project.title} fill className="object-cover group-hover:scale-105 transition-transform duration-500" unoptimized />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0f172a]/60 to-transparent" />
+                </div>
+                <div className="p-5 flex flex-col flex-1">
+                  <h3 className="text-base font-bold mb-2">{project.title}</h3>
+                  <p className="text-sm text-[#f8fafc]/60 mb-4 leading-relaxed flex-1">{project.description}</p>
+                  <Link href={project.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-[#f59e0b] text-sm font-semibold hover:gap-3 transition-all duration-200">
+                    View Project <span>→</span>
+                  </Link>
+                </div>
               </div>
-
-              <div className="p-6">
-                <h3 className="text-2xl font-bold mb-3">{project.title}</h3>
-                <p className="text-xl text-[#f8fafc]/70 mb-6 text-sm leading-relaxed">{project.description}</p>
-                <Link
-                  href={project.link}
-                  className="text-xl inline-block text-[#f59e0b] font-semibold hover:opacity-70 transition-opacity flex items-center gap-2"
-                >
-                  Explore
-                  <span>→</span>
-                </Link>
-              </div>
-            </div>
+            </AnimateIn>
           ))}
         </div>
       </div>

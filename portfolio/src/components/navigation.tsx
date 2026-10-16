@@ -14,9 +14,9 @@ export default function Navigation() {
   ]
 
   return (
-    <nav className="fixed top-0 w-full bg-[#0f172a]/95 backdrop-blur-sm border-b border-[#334155] z-50 text-2xl">
-      <div className="max-w-9xl mx-auto px-[5cm] py-5 flex justify-between items-center">
-        <Link href="/" className="text-3xl font-bold text-[#f59e0b]">
+    <nav className="fixed top-0 w-full bg-[#0f172a]/95 backdrop-blur-sm border-b border-[#334155] z-50">
+      <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+        <Link href="/" className="text-xl font-bold text-[#f59e0b]">
           Claire
         </Link>
 
@@ -24,16 +24,13 @@ export default function Navigation() {
         <button onClick={() => setIsOpen(!isOpen)} className="md:hidden flex flex-col gap-1.5" aria-label="Toggle menu">
           <span className={`h-0.5 w-6 bg-[#f8fafc] transition-all ${isOpen ? "rotate-45 translate-y-2" : ""}`}></span>
           <span className={`h-0.5 w-6 bg-[#f8fafc] transition-all ${isOpen ? "opacity-0" : ""}`}></span>
-          <span
-            className={`h-0.5 w-6 bg-[#f8fafc] transition-all ${isOpen ? "-rotate-45 -translate-y-2" : ""}`}
-          ></span>
+          <span className={`h-0.5 w-6 bg-[#f8fafc] transition-all ${isOpen ? "-rotate-45 -translate-y-2" : ""}`}></span>
         </button>
 
         {/* Desktop menu */}
-
         <div className="hidden md:flex gap-8">
           {links.map((link) => (
-            <Link key={link.href} href={link.href} className="text-[#f8fafc]/80 hover:text-[#f59e0b] transition-colors">
+            <Link key={link.href} href={link.href} className="text-sm font-medium text-[#f8fafc]/70 hover:text-[#f59e0b] transition-colors">
               {link.label}
             </Link>
           ))}
@@ -47,7 +44,7 @@ export default function Navigation() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="text-[#f8fafc]/80 hover:text-[#f59e0b] transition-colors"
+                  className="text-sm text-[#f8fafc]/80 hover:text-[#f59e0b] transition-colors"
                   onClick={() => setIsOpen(false)}
                 >
                   {link.label}
