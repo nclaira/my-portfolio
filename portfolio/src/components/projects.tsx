@@ -5,6 +5,12 @@ import AnimateIn from "@/components/AnimateIn"
 export default function Projects() {
   const projects = [
     {
+      title: "Mucamanza Crypto Hub",
+      description: "A full-stack crypto hub built with Next.js, TypeScript, Tailwind CSS, and MongoDB. Features live YouTube video syncing, an e-commerce book store, and an admin dashboard.",
+      image: "/images/crypto-img.png",
+      link: "https://www.mucamanzacryptohub.com/",
+    },
+    {
       title: "Umurunga Family – NGO Website",
       description: "Modern frontend website for a Rwanda-based peace and youth empowerment organization. Built with Next.js 16, Tailwind CSS, and TypeScript.",
       image: "/images/umurunga-website.png",

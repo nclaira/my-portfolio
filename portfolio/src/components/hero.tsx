@@ -14,15 +14,17 @@ export default function Hero() {
           <AnimateIn direction="left" delay={0.1}>
             <div className="space-y-6">
               <div>
-                <p className="text-[#f59e0b] text-sm font-semibold tracking-widest uppercase mb-3">Front-End Developer</p>
+                <p className="text-[#f59e0b] text-sm font-semibold tracking-widest uppercase mb-3">Full-Stack Developer</p>
                 <h1 className="text-4xl md:text-5xl font-bold leading-tight">
                   Hello, I'm <span className="text-[#f59e0b]">Claire</span>
                 </h1>
               </div>
-              <p className="text-base text-[#f8fafc]/70 leading-relaxed max-w-lg">
-                I'm a passionate front-end developer specializing in creating clean, responsive web interfaces. Currently
-                pursuing my Applied Mathematics degree while building modern web solutions with Next.js and React.
-              </p>
+              <p> I am a Full-Stack Developer and Applied Mathematics student with hands-on experience building modern,
+               production-ready web applications. I specialize in crafting end-to-end web solutions using Next.js, React, 
+               TypeScript, and Node.js—combining responsive user interfaces with secure database architectures and API integrations. 
+               Leveraged by a strong analytical background, I also build interactive dashboards and data reports using Power BI and
+                Excel to turn complex data into clear, actionable insights.</p>
+                
               <div className="flex flex-col sm:flex-row gap-3 pt-2">
                 <Link href="#projects" className="inline-block bg-[#f59e0b] text-[#0f172a] text-sm font-semibold px-6 py-3 rounded-lg hover:opacity-90 transition-opacity">
                   View My Work
